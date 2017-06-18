@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "basicBot";
+    var fork = "NightwalkerBot";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -19,7 +19,7 @@
         //Extend the bot here, either by calling another function or here directly.
 
         // You can add more spam words to the bot.
-        var spamWords = ['spam1', 'spam2', 'spam3', 'spam4'];
+        var spamWords = ['Lixo', 'tnc', 'traveco'];
         for (var i = 0; i < spamWords.length; i++) {
           window.bot.chatUtilities.spam.push(spamWords[i]);
         }
@@ -46,8 +46,8 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
-      language: "english",
+      botName: "NightwalkerBot",
+      language: "portuguese",
       chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
@@ -58,9 +58,9 @@
       autoskip: false,
       smartSkip: true,
       cmdDeletion: true,
-      maximumAfk: 120,
+      maximumAfk: 60,
       afkRemoval: true,
-      maximumDc: 60,
+      maximumDc: 70,
       bouncerPlus: true,
       blacklistEnabled: true,
       lockdownEnabled: false,
@@ -68,23 +68,23 @@
       maximumLocktime: 10,
       cycleGuard: true,
       maximumCycletime: 10,
-      voteSkip: false,
+      voteSkip: true,
       voteSkipLimit: 10,
-      historySkip: false,
+      historySkip: true,
       timeGuard: true,
-      maximumSongLength: 10,
+      maximumSongLength: 6,
       autodisable: false,
-      commandCooldown: 30,
+      commandCooldown: 20,
       usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
-      ["theme", "This song does not fit the room theme. "],
+      ["theme", "Essa música não está de acordo com as regras. "],
       ["op", "This song is on the OP list. "],
-      ["history", "This song is in the history. "],
+      ["history", "Essa música já foi tocada migx. "],
       ["mix", "You played a mix, which is against the rules. "],
-      ["sound", "The song you played had bad sound quality or no sound. "],
-      ["nsfw", "The song you contained was NSFW (image or sound). "],
-      ["unavailable", "The song you played was not available for some users. "]
+      ["sound", "Socorro, não dá pra entender nada com esse áudio, more. "],
+      ["nsfw", "Música explícita não pode =/ "],
+      ["unavailable", "Essa música não tá disponível pra todo mundo. "]
       ],
       afkpositionCheck: 15,
       afkRankCheck: "ambassador",
@@ -94,7 +94,7 @@
       filterChat: true,
       etaRestriction: false,
       welcome: true,
-      opLink: null,
+      opLink: http://1.agehotel.info,
       rulesLink: null,
       themeLink: null,
       fbLink: null,
